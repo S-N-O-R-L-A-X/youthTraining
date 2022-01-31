@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import myMarkdown from './README.md';
+import myMarkdown from '../../assets/exchange.md';
 export default {
   components: {
     myMarkdown
