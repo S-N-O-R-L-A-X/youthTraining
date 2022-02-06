@@ -5,11 +5,15 @@
       background-color="#545c64" text-color="#fff" active-text-color="#ffd04b">
       <el-submenu index="1">
         <template slot="title">
-          <i class="el-icon-location"></i>
-          <span>沟通技巧</span>
+          <i>
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-chat"></use>
+            </svg>
+          </i>
+          <span> &nbsp; 沟通技巧</span>
         </template>
         <el-menu-item-group>
-          <template slot="title"></template>
+          <!-- <template slot="title"></template> -->
           <el-menu-item index="1-1">口头交流</el-menu-item>
           <el-menu-item index="1-2">非语言交流</el-menu-item>
           <el-menu-item index="1-3">听力技巧</el-menu-item>
@@ -40,14 +44,14 @@
 </template>
 
 <script>
+import icon from '../api/icon.js' //to show icon
 export default {
 
 }
 </script>
 
-<style>
-/* .sidebar {
-  width:30%;
-  height:100%;
-} */
+<style scoped>
+.el-menu{
+  text-align: left;
+}
 </style>

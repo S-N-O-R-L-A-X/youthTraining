@@ -29,6 +29,7 @@ export default {
 html, body {
   margin: 0;
 }
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -38,17 +39,25 @@ html, body {
   /* margin-top: 60px; */
 }
 
-.el-header, .el-footer {
+.el-header {
     background-color: #A7FFEB;
-    color: #A7FFEB;
+    color: red;
     text-align: center;
-    line-height: 60px;
+    line-height: 200px;
+    height:400px;
   }
 
 .el-aside {
   background-color: #D3DCE6;
-  color: #333;
   text-align: center;
   line-height: 200px;
+}
+
+.icon {
+    width: 1.5em; 
+    height: 1.5em;
+    /* vertical-align: -0.15em; */
+    fill: currentColor;
+    overflow: hidden;
 }
 </style>
