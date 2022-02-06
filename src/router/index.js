@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Version from '../views/versionLog/VersionInfo.vue'
 import Forum from '../views/Forum.vue'
-
+import Sidebar from '../layout/Sidebar.vue'
 
 Vue.use(VueRouter)
 
@@ -30,6 +30,11 @@ const routes = [
     path: '/version',
     name: 'Version',
     component: Version
+  },
+  {
+    path: '/sidebar',
+    name: 'Sidebar',
+    component: Sidebar
   },
 ]
 
