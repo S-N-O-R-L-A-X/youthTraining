@@ -2,7 +2,7 @@
   <div class="sidebar">
     <el-menu default-active="2" class="el-menu-vertical-demo"
       @open="handleOpen" @close="handleClose"
-      background-color="#545c64" text-color="#fff" active-text-color="#ffd04b">
+      background-color="#fff" text-color="#000" active-text-color="#ffd04b">
       <el-submenu index="1">
         <template slot="title">
           <i>

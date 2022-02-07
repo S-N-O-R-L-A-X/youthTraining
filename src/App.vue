@@ -48,7 +48,7 @@ html, body {
   }
 
 .el-aside {
-  background-color: #D3DCE6;
+  background-color: #fff;
   text-align: center;
   line-height: 200px;
 }
@@ -59,5 +59,9 @@ html, body {
     /* vertical-align: -0.15em; */
     fill: currentColor;
     overflow: hidden;
+}
+
+.el-main {
+  background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
 }
 </style>
