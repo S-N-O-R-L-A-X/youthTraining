@@ -5,7 +5,7 @@
       <el-container>
         <el-aside><Sidebar/></el-aside>
         <el-main>
-          <router-view/>
+          <router-view></router-view>
         </el-main>
       </el-container>
     </el-container>
@@ -21,6 +21,9 @@ export default {
   components: {
     Header,
     Sidebar
+  },
+  methods:{
+    
   }
 }
 </script>

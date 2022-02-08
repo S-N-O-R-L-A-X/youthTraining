@@ -5,6 +5,7 @@ import Version from '../views/versionLog/VersionInfo.vue'
 import Forum from '../views/Forum.vue'
 import Sidebar from '../layout/Sidebar.vue'
 import EQ from '../views/articles/eq/EQ.vue'
+import ERROR from '../views/error/404.vue'
 
 Vue.use(VueRouter)
 
@@ -41,6 +42,12 @@ const routes = [
     path:'/eq',
     name:'EQ',
     component: EQ
+  },
+  {
+    path:'/404',
+    name:'404',
+    component: ERROR,
+    hidden: true
   },
 ]
 
