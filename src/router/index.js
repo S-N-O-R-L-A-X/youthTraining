@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import Version from '../views/versionLog/VersionInfo.vue'
 import Forum from '../views/Forum.vue'
 import Sidebar from '../layout/Sidebar.vue'
+import EQ from '../views/articles/eq/EQ.vue'
 
 Vue.use(VueRouter)
 
@@ -35,6 +36,11 @@ const routes = [
     path: '/sidebar',
     name: 'Sidebar',
     component: Sidebar
+  },
+  {
+    path:'/eq',
+    name:'EQ',
+    component: EQ
   },
 ]
 
