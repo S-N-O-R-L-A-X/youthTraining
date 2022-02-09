@@ -44,10 +44,13 @@ const routes = [
     component: EQ
   },
   {
-    path:'/404',
+    path:'*',
     name:'404',
     component: ERROR,
-    hidden: true
+    hidden: true,
+    meta:{
+      keepAlive:true,
+    }
   },
 ]
 

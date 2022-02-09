@@ -1,6 +1,6 @@
 <template>
   <div>
-    <el-container>
+    <el-container v-show="!$route.meta.keepAlive">
       <el-header><Header/></el-header>
       <el-container>
         <el-aside><Sidebar/></el-aside>
@@ -9,6 +9,7 @@
         </el-main>
       </el-container>
     </el-container>
+    <router-view></router-view>
   </div>
 </template>
 
