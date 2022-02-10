@@ -5,7 +5,10 @@ import Version from '../views/versionLog/VersionInfo.vue'
 import Forum from '../views/Forum.vue'
 import Sidebar from '../layout/Sidebar.vue'
 import EQ from '../views/articles/eq/Index.vue'
-import ERROR from '../views/error/404.vue'
+import ERROR from '@/views/error/404.vue'
+import Listen from '@/views/articles/listen/Index.vue'
+import WhatIsCommunication from '@/views/articles/communication/whatIsCommunication/whatIsCommunication.vue'
+
 
 Vue.use(VueRouter)
 
@@ -42,6 +45,16 @@ const routes = [
     path:'/eq',
     name:'EQ',
     component: EQ
+  },
+  {
+    path:'/listen',
+    name:'Listen',
+    component: Listen
+  },
+  {
+    path:'/whatIsCommunication',
+    name:'WhatIsCommunication',
+    component: WhatIsCommunication
   },
   {
     path:'*',
