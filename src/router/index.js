@@ -1,16 +1,18 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Layout from '@/layout/Index.vue'
+import Layout from '@/layout'
 import Home from '../views/Home.vue'
 import Version from '../views/versionLog/VersionInfo.vue'
 import Forum from '../views/Forum.vue'
 import Sidebar from '../layout/Sidebar.vue'
-import EQ from '../views/articles/eq/Index.vue'
+import EQ from '@/views/articles/eq'
 import ERROR from '@/views/error/404.vue'
-import Listen from '@/views/articles/listen/Index.vue'
-import WhatIsCommunication from '@/views/articles/communication/whatIsCommunication/Index.vue'
-import InterpersonalCommunicationTechnique from '@/views/articles/communication/interpersonalCommunicationTechnique/Index.vue'
-import EffectiveCommunicationTechnique from '@/views/articles/communication/effectiveCommunicationTechnique/Index.vue'
+import Listen from '@/views/articles/listen'
+import WhatIsCommunication from '@/views/articles/communication/whatIsCommunication'
+import InterpersonalCommunicationTechnique from '@/views/articles/communication/interpersonalCommunicationTechnique'
+import EffectiveCommunicationTechnique from '@/views/articles/communication/effectiveCommunicationTechnique'
+import NonverbalCommunication from '@/views/articles/communication/nonverbalCommunication'
+
 
 Vue.use(VueRouter)
 
@@ -74,6 +76,11 @@ const routes = [
         path:'effectiveCommunicationTechnique',
         name:'EffectiveCommunicationTechnique',
         component: EffectiveCommunicationTechnique
+      },
+      {
+        path:'nonverbalCommunication',
+        name:'NonverbalCommunication',
+        component: NonverbalCommunication
       },
     ]
   },
