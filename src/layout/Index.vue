@@ -1,24 +1,37 @@
 <template>
-  <router-view></router-view>
-  <!-- <div>
+  <div>
     <el-container v-show="!$route.meta.keepAlive">
       <el-header><Header/></el-header>
+      <el-container>
+        <el-aside><Sidebar/></el-aside>
+        <!-- <el-aside></el-aside> -->
         <router-view></router-view>
+
+      </el-container>
     </el-container>
+  
     <router-view v-show="$route.meta.keepAlive"></router-view>
-  </div> -->
+  </div>
 </template>
 
 <script>
 
-import Header from './layout/Header.vue'
-import Sidebar from './layout/Sidebar.vue'
+import Header from './Header.vue'
+import Sidebar from './Sidebar.vue'
 export default {
   name: 'App',
   components: {
     Header,
     Sidebar
   },
+  created(){
+    this.showSidebar();
+  },
+  methods:{
+    showSidebar(){
+      console.log(this.$route)
+    }
+  }
 }
 </script>
 

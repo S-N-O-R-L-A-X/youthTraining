@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import Layout from '@/layout/Index.vue'
 import Home from '../views/Home.vue'
 import Version from '../views/versionLog/VersionInfo.vue'
 import Forum from '../views/Forum.vue'
@@ -15,9 +16,21 @@ Vue.use(VueRouter)
 
 const routes = [
   {
+    path:'/puppet',
+    name:'Puppet',
+    component: Layout,
+    children:[
+      {
+        path:'home',
+        name:'Home',
+        component: Home
+      }
+    ]
+  },
+  {
     path: '/',
-    name: 'Home',
-    component: Home
+    component: Layout,
+    redirect:{name:'Home'},
   },
   {
     path: '/about',
@@ -43,6 +56,28 @@ const routes = [
     component: Sidebar
   },
   {
+    path:'/communication',
+    name:'Communication',
+    // component: Home,
+    children:[
+      {
+        path:'/whatIsCommunication',
+        name:'WhatIsCommunication',
+        component: WhatIsCommunication
+      },
+      {
+        path:'/interpersonalCommunicationTechnique',
+        name:'InterpersonalCommunicationTechnique',
+        component: InterpersonalCommunicationTechnique
+      },
+      {
+        path:'effectiveCommunicationTechnique',
+        name:'EffectiveCommunicationTechnique',
+        component: EffectiveCommunicationTechnique
+      },
+    ]
+  },
+  {
     path:'/eq',
     name:'EQ',
     component: EQ
@@ -52,21 +87,7 @@ const routes = [
     name:'Listen',
     component: Listen
   },
-  {
-    path:'/whatIsCommunication',
-    name:'WhatIsCommunication',
-    component: WhatIsCommunication
-  },
-  {
-    path:'/interpersonalCommunicationTechnique',
-    name:'InterpersonalCommunicationTechnique',
-    component: InterpersonalCommunicationTechnique
-  },
-  {
-    path:'/effectiveCommunicationTechnique',
-    name:'EffectiveCommunicationTechnique',
-    component: EffectiveCommunicationTechnique
-  },
+  
   {
     path:'*',
     name:'404',

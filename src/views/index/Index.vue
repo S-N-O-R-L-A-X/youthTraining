@@ -1,8 +1,8 @@
 <template>
   <el-container>
-    <el-aside>
+    <!-- <el-aside>
       <Sidebar/>
-    </el-aside>
+    </el-aside> -->
     <el-main>
       <my-markdown></my-markdown>
     </el-main>
