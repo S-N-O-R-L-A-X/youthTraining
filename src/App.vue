@@ -2,14 +2,14 @@
   <div>
     <el-container v-show="!$route.meta.keepAlive">
       <el-header><Header/></el-header>
-      <el-container>
-        <el-aside><Sidebar/></el-aside>
-        <el-main>
+      <!-- <el-container> -->
+        <!-- <el-aside><Sidebar/></el-aside> -->
+        
           <router-view></router-view>
-        </el-main>
-      </el-container>
+        
+      <!-- </el-container> -->
     </el-container>
-    <router-view></router-view>
+    <router-view v-show="$route.meta.keepAlive"></router-view>
   </div>
 </template>
 

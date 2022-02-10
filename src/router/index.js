@@ -4,7 +4,7 @@ import Home from '../views/Home.vue'
 import Version from '../views/versionLog/VersionInfo.vue'
 import Forum from '../views/Forum.vue'
 import Sidebar from '../layout/Sidebar.vue'
-import EQ from '../views/articles/eq/EQ.vue'
+import EQ from '../views/articles/eq/Index.vue'
 import ERROR from '../views/error/404.vue'
 
 Vue.use(VueRouter)

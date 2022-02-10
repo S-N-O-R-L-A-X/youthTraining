@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import myMarkdown from '@/assets/exchange.md';
+import myMarkdown from '@/assets/情商.md';
 import Sidebar from './Sidebar'
 export default {
   components: {
