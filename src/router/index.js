@@ -61,7 +61,8 @@ const routes = [
   {
     path:'/communication',
     name:'Communication',
-    // component: Home,
+    component: Layout,
+    meta:{title:'Communication'},
     children:[
       {
         path:'/whatIsCommunication',

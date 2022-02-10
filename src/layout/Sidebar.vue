@@ -1,6 +1,6 @@
 <template>
   <div class="sidebar">
-    <el-menu default-active="2" class="el-menu-vertical-demo"
+    <el-menu :router="true" default-active="$route.path" class="el-menu-vertical-demo"
       background-color="#fff" text-color="#000" active-text-color="#ffd04b">
       <el-submenu index="1">
         <template slot="title">
@@ -18,7 +18,8 @@
           <el-menu-item index="1-3">听力技巧</el-menu-item>
         </el-menu-item-group>
       </el-submenu>
-      <el-menu-item index="2" @click="navigate(2)">
+      <!-- <el-menu-item index="2" @click="navigate(2)"> -->
+      <el-menu-item index="/eq">
         <i class="el-icon-menu"></i>
         <span slot="title">情商</span>
       </el-menu-item>

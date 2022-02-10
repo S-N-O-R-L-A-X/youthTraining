@@ -3,10 +3,11 @@
     <el-container v-show="!$route.meta.keepAlive">
       <el-header><Header/></el-header>
       <el-container>
-        <el-aside><Sidebar/></el-aside>
-        <!-- <el-aside></el-aside> -->
+        <el-aside v-show="showSidebar()===1"><Sidebar/></el-aside>
+        <el-aside v-show="showSidebar()===2"><Sidebar2/></el-aside>
+        <el-main>
         <router-view></router-view>
-
+        </el-main>
       </el-container>
     </el-container>
   
@@ -18,18 +19,22 @@
 
 import Header from './Header.vue'
 import Sidebar from './Sidebar.vue'
+import Sidebar2 from './Sidebar2.vue'
 export default {
   name: 'App',
   components: {
-    Header,
-    Sidebar
+    Header, Sidebar, Sidebar2
   },
   created(){
     this.showSidebar();
   },
   methods:{
     showSidebar(){
-      console.log(this.$route)
+      const path=this.$route.path
+      if(path.indexOf('/communication')>=0)
+        return 2;
+        
+      return 1;
     }
   }
 }
