@@ -31,6 +31,7 @@ const routes = [
   },
   {
     path: '/',
+    name: 'Index',
     component: Layout,
     redirect:{name:'Home'},
   },
@@ -105,6 +106,7 @@ const routes = [
     }
   },
 ]
+
 
 const router = new VueRouter({
   mode: 'history',
