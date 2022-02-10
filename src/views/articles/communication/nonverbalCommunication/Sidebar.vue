@@ -66,12 +66,7 @@
         </template>
         <el-menu-item-group>
           <!-- <template slot="title"></template> -->
-          <el-menu-item index="3-1">个人形象 
- 
-
-
-
-  </el-menu-item>
+          <el-menu-item index="3-1">个人形象 </el-menu-item>
           <el-menu-item index="3-2">身体语言，暗示 </el-menu-item>
           <el-menu-item index="3-3">非语言交流：面部和声音 </el-menu-item>
           <el-menu-item index="3-4">口头交流 </el-menu-item>

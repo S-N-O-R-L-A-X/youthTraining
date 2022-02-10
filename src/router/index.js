@@ -9,6 +9,7 @@ import ERROR from '@/views/error/404.vue'
 import Listen from '@/views/articles/listen/Index.vue'
 import WhatIsCommunication from '@/views/articles/communication/whatIsCommunication/Index.vue'
 import InterpersonalCommunicationTechnique from '@/views/articles/communication/interpersonalCommunicationTechnique/Index.vue'
+import EffectiveCommunicationTechnique from '@/views/articles/communication/effectiveCommunicationTechnique/Index.vue'
 
 Vue.use(VueRouter)
 
@@ -60,6 +61,11 @@ const routes = [
     path:'/interpersonalCommunicationTechnique',
     name:'InterpersonalCommunicationTechnique',
     component: InterpersonalCommunicationTechnique
+  },
+  {
+    path:'/effectiveCommunicationTechnique',
+    name:'EffectiveCommunicationTechnique',
+    component: EffectiveCommunicationTechnique
   },
   {
     path:'*',

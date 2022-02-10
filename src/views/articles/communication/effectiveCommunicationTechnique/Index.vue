@@ -11,7 +11,7 @@
 
 <script>
 import myMarkdown from './有效人际沟通的技巧.md';
-import Sidebar from './Sidebar'
+import Sidebar from '../Sidebar'
 export default {
   components: {
     myMarkdown, Sidebar,

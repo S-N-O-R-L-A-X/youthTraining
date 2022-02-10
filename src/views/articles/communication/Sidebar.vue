@@ -1,6 +1,6 @@
 <template>
   <!-- <el-aside> -->
-    <el-menu default-active="2" class="el-menu-vertical-demo"
+    <el-menu default-active="$route.path" class="el-menu-vertical-demo"
       background-color="#fff" text-color="#000" active-text-color="#ffd04b">
       <el-submenu index="1">
         <template slot="title">
@@ -50,8 +50,7 @@
           <el-menu-item index="2-6">积极倾听 </el-menu-item>
           <el-menu-item index="2-7">正念聆听 </el-menu-item>
           <el-menu-item index="2-8">移情聆听 </el-menu-item>
-          <el-menu-item index="2-9">改善沟通 </el-menu-item>
-          <el-menu-item index="2-10">听力误解  </el-menu-item>
+          <el-menu-item index="2-9">听力误解  </el-menu-item>
         </el-menu-item-group>
       </el-submenu>
 
@@ -69,22 +68,30 @@
           <el-menu-item index="3-1">个人形象 </el-menu-item>
           <el-menu-item index="3-2">身体语言，暗示 </el-menu-item>
           <el-menu-item index="3-3">非语言交流：面部和声音 </el-menu-item>
-          <el-menu-item index="3-4">口头交流 </el-menu-item>
-          <el-menu-item index="3-5">有效的演讲 </el-menu-item>
-          <el-menu-item index="3-6">会话技巧 </el-menu-item>
-          <el-menu-item index="3-7">发表演讲 </el-menu-item>
-          <el-menu-item index="3-8">提问技巧和技巧 </el-menu-item>
-          <el-menu-item index="3-9">问题类型 </el-menu-item>
-          <el-menu-item index="3-10">反射 </el-menu-item>
-          <el-menu-item index="3-11">澄清 </el-menu-item>
         </el-menu-item-group>
       </el-submenu>
-     
+      <el-submenu index="4">
+        <template slot="title">
+          <i>
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-chat"></use>
+            </svg>
+          </i>
+          <span> &nbsp; 口头交流</span>
+        </template>
+        <el-menu-item-group>
+          <!-- <template slot="title"></template> -->
+          <el-menu-item index="4-1">有效的演讲 </el-menu-item>
+          <el-menu-item index="4-2">会话技巧 </el-menu-item>
+          <el-menu-item index="4-3">发表演讲 </el-menu-item>
+          <el-menu-item index="4-4">提问技巧和技巧 </el-menu-item>
+          <el-menu-item index="4-5">问题类型 </el-menu-item>
+          <el-menu-item index="4-6">反射 </el-menu-item>
+          <el-menu-item index="4-7">澄清 </el-menu-item>
+        </el-menu-item-group>
+      </el-submenu>
     </el-menu>
   
-
- 
-
 </template>
 
 <script>
