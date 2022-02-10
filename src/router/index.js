@@ -7,8 +7,8 @@ import Sidebar from '../layout/Sidebar.vue'
 import EQ from '../views/articles/eq/Index.vue'
 import ERROR from '@/views/error/404.vue'
 import Listen from '@/views/articles/listen/Index.vue'
-import WhatIsCommunication from '@/views/articles/communication/whatIsCommunication/whatIsCommunication.vue'
-
+import WhatIsCommunication from '@/views/articles/communication/whatIsCommunication/Index.vue'
+import InterpersonalCommunicationTechnique from '@/views/articles/communication/interpersonalCommunicationTechnique/Index.vue'
 
 Vue.use(VueRouter)
 
@@ -55,6 +55,11 @@ const routes = [
     path:'/whatIsCommunication',
     name:'WhatIsCommunication',
     component: WhatIsCommunication
+  },
+  {
+    path:'/interpersonalCommunicationTechnique',
+    name:'InterpersonalCommunicationTechnique',
+    component: InterpersonalCommunicationTechnique
   },
   {
     path:'*',

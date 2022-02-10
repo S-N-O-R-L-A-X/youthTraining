@@ -68,4 +68,8 @@ html, body {
 .el-main {
   background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
 }
+
+p{
+  text-indent: 2em;
+}
 </style>

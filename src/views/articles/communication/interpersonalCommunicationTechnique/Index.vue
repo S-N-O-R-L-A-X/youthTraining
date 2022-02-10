@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import myMarkdown from './青训社区.md';
+import myMarkdown from './人际沟通技巧.md';
 import Sidebar from './Sidebar'
 export default {
   components: {
