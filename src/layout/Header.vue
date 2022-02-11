@@ -18,7 +18,7 @@
         </el-link>
         <template #dropdown>
           <el-dropdown-menu>
-            <el-dropdown-item v-for="item in items">
+            <el-dropdown-item v-for="(item,key) in items" :key="index">
               <el-link>{{item.title}}</el-link>
               </el-dropdown-item>
           </el-dropdown-menu>

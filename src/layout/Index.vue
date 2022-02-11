@@ -9,8 +9,9 @@
           <router-view></router-view>
         </el-main>
       </el-container>
+      <el-footer><Footer/></el-footer>
     </el-container>
-  
+
     <router-view v-show="$route.meta.keepAlive"></router-view>
   </div>
 </template>
@@ -20,10 +21,11 @@
 import Header from './Header.vue'
 import Sidebar from './Sidebar.vue'
 import Sidebar2 from './Sidebar2.vue'
+import Footer from './Footer.vue'
 export default {
   name: 'App',
   components: {
-    Header, Sidebar, Sidebar2
+    Header, Sidebar, Sidebar2, Footer
   },
   created(){
     this.showSidebar();
