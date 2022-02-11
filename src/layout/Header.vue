@@ -115,14 +115,12 @@ export default {
     .link{
       margin-right: 40px;
       margin-left: 40px;  /*设置其水平方向上的外边距，元素之间的距离就会被拉开。*/
-      
     }
 
     .menu-link {
       display: inline-block;
-      vertical-align: text-top;
       padding: 0 15px;
-      
+      vertical-align:center;
     }
 
     &:focus {
