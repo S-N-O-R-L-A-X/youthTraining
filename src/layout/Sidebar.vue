@@ -13,7 +13,7 @@
         </template>
         <el-menu-item-group>
           <!-- <template slot="title"></template> -->
-          <el-menu-item index="1-1">口头交流</el-menu-item>
+          <el-menu-item index="/about">口头交流</el-menu-item>
           <el-menu-item index="1-2">非语言交流</el-menu-item>
           <el-menu-item index="1-3">听力技巧</el-menu-item>
         </el-menu-item-group>

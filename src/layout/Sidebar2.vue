@@ -14,8 +14,8 @@
         <el-menu-item-group>
           <!-- <template slot="title"></template> -->
           <el-menu-item index="/communication/whatIsCommunication">什么是沟通？ </el-menu-item>
-          <el-menu-item index="1-2">人际沟通技巧 </el-menu-item>
-          <el-menu-item index="1-3">有效人际沟通的技巧 </el-menu-item>
+          <el-menu-item index="/communication/interpersonalCommunicationTechnique">人际沟通技巧 </el-menu-item>
+          <el-menu-item index="/communication/effectiveCommunicationTechnique">有效人际沟通的技巧 </el-menu-item>
           <el-menu-item index="1-4">沟通原则 </el-menu-item>
           <el-menu-item index="1-5">有效沟通的障碍 </el-menu-item>
           <el-menu-item index="1-6">避免常见的沟通错误 </el-menu-item>

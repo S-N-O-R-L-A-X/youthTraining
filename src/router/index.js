@@ -5,14 +5,14 @@ import Home from '../views/Home.vue'
 import Version from '../views/versionLog/VersionInfo.vue'
 import Forum from '../views/Forum.vue'
 import Sidebar from '../layout/Sidebar.vue'
-import EQ from '@/views/articles/eq'
 import ERROR from '@/views/error/404.vue'
+import EQ from '@/views/articles/eq'
 import Listen from '@/views/articles/listen'
 import WhatIsCommunication from '@/views/articles/communication/whatIsCommunication'
 import InterpersonalCommunicationTechnique from '@/views/articles/communication/interpersonalCommunicationTechnique'
 import EffectiveCommunicationTechnique from '@/views/articles/communication/effectiveCommunicationTechnique'
 import NonverbalCommunication from '@/views/articles/communication/nonverbalCommunication'
-
+import WordCommunication from '@/views/articles/communication/wordCommunication'
 
 Vue.use(VueRouter)
 
@@ -65,12 +65,12 @@ const routes = [
     meta:{title:'Communication'},
     children:[
       {
-        path:'/whatIsCommunication',
+        path:'whatIsCommunication',
         name:'WhatIsCommunication',
         component: WhatIsCommunication
       },
       {
-        path:'/interpersonalCommunicationTechnique',
+        path:'interpersonalCommunicationTechnique',
         name:'InterpersonalCommunicationTechnique',
         component: InterpersonalCommunicationTechnique
       },
@@ -83,6 +83,11 @@ const routes = [
         path:'nonverbalCommunication',
         name:'NonverbalCommunication',
         component: NonverbalCommunication
+      },
+      {
+        path:'wordCommunication',
+        name:'WordCommunication',
+        component: WordCommunication
       },
     ]
   },

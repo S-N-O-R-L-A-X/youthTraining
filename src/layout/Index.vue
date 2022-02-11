@@ -6,7 +6,7 @@
         <el-aside v-show="showSidebar()===1"><Sidebar/></el-aside>
         <el-aside v-show="showSidebar()===2"><Sidebar2/></el-aside>
         <el-main>
-        <router-view></router-view>
+          <router-view></router-view>
         </el-main>
       </el-container>
     </el-container>
@@ -78,9 +78,12 @@ html, body {
 
 .el-main {
   background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+  min-height: 40rem;
 }
 
 p{
   text-indent: 2em;
 }
+
+
 </style>
