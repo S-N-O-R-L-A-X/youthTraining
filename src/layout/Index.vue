@@ -48,6 +48,8 @@ html, body {
   height: 100%;
 }
 
+
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -96,6 +98,7 @@ html, body {
 
 p{
   text-indent: 2em;
+  text-align: left;
 }
 
 
