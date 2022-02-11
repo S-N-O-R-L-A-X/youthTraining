@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="app">
     <el-container v-show="!$route.meta.keepAlive">
       <el-header><Header/></el-header>
       <el-container>
@@ -43,6 +43,7 @@ export default {
 <style>
 html, body {
   margin: 0;
+  height: 100%;
 }
 
 #app {
@@ -51,16 +52,26 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  height:100%;
   /* margin-top: 60px; */
 }
 
 .el-header {
-    background-color: #A7FFEB;
-    color: red;
-    text-align: center;
-    line-height: 200px;
-    height:400px;
-  }
+  background-color: #A7FFEB;
+  color: red;
+  text-align: center;
+  line-height: 200px;
+  height:400px;
+}
+
+.el-container  {
+  min-height: 100%;
+}
+
+.inner-container {
+  height: 100%;
+}
+
 
 .el-aside {
   background-color: #fff;
@@ -78,7 +89,7 @@ html, body {
 
 .el-main {
   background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
-  min-height: 40rem;
+  /* min-height: 40rem; */
 }
 
 p{
