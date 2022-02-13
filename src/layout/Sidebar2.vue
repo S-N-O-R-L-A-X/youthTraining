@@ -35,7 +35,7 @@
         <template slot="title">
           <i>
             <svg class="icon" aria-hidden="true">
-                <use xlink:href="#icon-chat"></use>
+                <use xlink:href="#icon-ear"></use>
             </svg>
           </i>
           <span> &nbsp; 听力技巧</span>
@@ -59,7 +59,7 @@
         <template slot="title">
           <i>
             <svg class="icon" aria-hidden="true">
-                <use xlink:href="#icon-chat"></use>
+                <use xlink:href="#icon-zy_jiaoliu"></use>
             </svg>
           </i>
           <span> &nbsp; 非口头交流</span>
@@ -76,7 +76,7 @@
         <template slot="title">
           <i>
             <svg class="icon" aria-hidden="true">
-                <use xlink:href="#icon-chat"></use>
+                <use xlink:href="#icon-mouth-full"></use>
             </svg>
           </i>
           <span> &nbsp; 口头交流</span>
