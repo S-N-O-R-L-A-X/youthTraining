@@ -13,6 +13,7 @@ import InterpersonalCommunicationTechnique from '@/views/articles/communication/
 import EffectiveCommunicationTechnique from '@/views/articles/communication/effectiveCommunicationTechnique'
 import NonverbalCommunication from '@/views/articles/communication/nonverbalCommunication'
 import WordCommunication from '@/views/articles/communication/wordCommunication'
+import CommunicationSkill from '@/views/articles/communication/communicationSkill'
 
 Vue.use(VueRouter)
 
@@ -89,8 +90,14 @@ const routes = [
         name:'WordCommunication',
         component: WordCommunication
       },
+      {
+        path:'communicationSkill',
+        name:'CommunicationSkill',
+        component: CommunicationSkill
+      },
     ]
   },
+  
   {
     path:'/eq',
     name:'EQ',

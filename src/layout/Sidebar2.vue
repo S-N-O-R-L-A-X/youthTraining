@@ -40,8 +40,9 @@
           </i>
           <span> &nbsp; 听力技巧</span>
         </template>
+
         <el-menu-item-group>
-          <!-- <template slot="title"></template> -->
+          <!-- <el-menu-item index="2-1">有效聆听的重要提示 </el-menu-item> -->
           <el-menu-item index="2-1">有效聆听的重要提示 </el-menu-item>
           <el-menu-item index="2-2">聆听的 10 条原则 </el-menu-item>
           <el-menu-item index="2-3">有效的听力技巧 </el-menu-item>
@@ -65,6 +66,7 @@
         </template>
         <el-menu-item-group>
           <!-- <template slot="title"></template> -->
+          <el-menu-item index="/communication/nonverbalCommunication">非口头交流 </el-menu-item>
           <el-menu-item index="3-1">个人形象 </el-menu-item>
           <el-menu-item index="3-2">身体语言，暗示 </el-menu-item>
           <el-menu-item index="3-3">非语言交流：面部和声音 </el-menu-item>
@@ -81,7 +83,8 @@
         </template>
         <el-menu-item-group>
           <!-- <template slot="title"></template> -->
-          <el-menu-item index="4-1">有效的演讲 </el-menu-item>
+          <el-menu-item index="/communication/wordCommunication">口头交流 </el-menu-item>
+          <el-menu-item index="/">有效的演讲 </el-menu-item>
           <el-menu-item index="4-2">会话技巧 </el-menu-item>
           <el-menu-item index="4-3">发表演讲 </el-menu-item>
           <el-menu-item index="4-4">提问技巧和技巧 </el-menu-item>
@@ -99,7 +102,7 @@ import icon from '@/api/icon.js' //to show icon
 export default {
   data(){
     return {
-
+      // menuItems:[{}]
     }
   },
   created(){
