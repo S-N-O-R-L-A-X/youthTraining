@@ -7,7 +7,7 @@
 
 <script>
 // @ is an alias to /src
-import Index from './index/Index.vue'
+import Index from './index/index'
 export default {
   name: 'Home',
   components: {
