@@ -101,7 +101,7 @@ const routes = [
   {
     path:'/eq',
     name:'EQ',
-    component: EQ
+    component: Layout
   },
   {
     path:'/listen',

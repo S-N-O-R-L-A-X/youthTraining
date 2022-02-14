@@ -5,6 +5,7 @@
       <el-container>
         <el-aside v-show="showSidebar()===1"><Sidebar/></el-aside>
         <el-aside v-show="showSidebar()===2"><Sidebar2/></el-aside>
+        <el-aside v-show="showSidebar()===3"><SidebarEQ/></el-aside>
         <el-main>
           <router-view></router-view>
         </el-main>
@@ -21,11 +22,12 @@
 import Header from './Header.vue'
 import Sidebar from './Sidebar.vue'
 import Sidebar2 from './Sidebar2.vue'
+import SidebarEQ from './Sidebar_EQ.vue'
 import Footer from './Footer.vue'
 export default {
   name: 'App',
   components: {
-    Header, Sidebar, Sidebar2, Footer
+    Header, Sidebar, Sidebar2, Footer, SidebarEQ
   },
   created(){
     this.showSidebar();
@@ -35,7 +37,8 @@ export default {
       const path=this.$route.path
       if(path.indexOf('/communication')>=0)
         return 2;
-        
+      else if(path.indexOf('/eq')>=0)
+        return 3;
       return 1;
     }
   }
