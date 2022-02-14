@@ -101,7 +101,13 @@ const routes = [
   {
     path:'/eq',
     name:'EQ',
-    component: Layout
+    component: Layout,
+    children: [
+      {
+        path:'',
+        component: EQ
+      }
+    ]
   },
   {
     path:'/listen',

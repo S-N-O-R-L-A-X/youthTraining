@@ -12,7 +12,7 @@
         </el-link>
       </el-tooltip> -->
       <el-dropdown class="menu-link">
-        <el-link href="https://info.bilibili.co/pages/viewpage.action?pageId=285088210" 
+        <el-link href="https://www.baidu.com" 
         target="_blank" class="link" :underline="false">
           人际技能<i class="el-icon-arrow-down"/>
         </el-link>
@@ -26,7 +26,7 @@
       </el-dropdown>
 
       <el-dropdown class="menu-link">
-        <el-link href="https://info.bilibili.co/pages/viewpage.action?pageId=285088210"
+        <el-link href="https://www.baidu.com"
          target="_blank" class="link" :underline="false">
           技能测试<i class="el-icon-arrow-down"/>
         </el-link>
