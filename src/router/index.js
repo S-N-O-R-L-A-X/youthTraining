@@ -19,22 +19,15 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path:'/puppet',
-    name:'Puppet',
+    path:'/',
     component: Layout,
     children:[
       {
-        path:'home',
+        path:'',
         name:'Home',
         component: Home
       }
     ]
-  },
-  {
-    path: '/',
-    name: 'Index',
-    component: Layout,
-    redirect:{name:'Home'},
   },
   {
     path: '/about',

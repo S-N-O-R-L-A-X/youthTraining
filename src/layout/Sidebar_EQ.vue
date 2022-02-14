@@ -12,7 +12,7 @@
           <span> &nbsp; {{item.title}}</span>
         </template>
         <el-menu-item-group v-for="(subitem,key2) in item.children" :key="key2">
-          <el-menu-item index="subitem.index">{{subitem.title}}</el-menu-item>
+          <el-menu-item :index="subitem.index">{{subitem.title}}</el-menu-item>
         </el-menu-item-group>
       </el-submenu>
     </el-menu>
@@ -31,7 +31,7 @@ export default {
           "children":[
             {
               "title":"什么是魅力？",
-              "index":"",
+              "index":"/home",
             },
             {
               "title":"建立信心",
