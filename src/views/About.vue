@@ -1,6 +1,6 @@
 <template>
 <div>
-  <div class="entry-content clearfix ">
+  <!-- <div class="entry-content clearfix ">
           <div class='jupe' id='needtoc'>#id选择器名称随意
               {{ post_detail.body|safe }}
               <div class="widget-tag-cloud">
@@ -13,7 +13,7 @@
               </div>
           </div>
   </div>
-  <my-markdown></my-markdown>
+  <my-markdown></my-markdown> -->
 </div>
 </template>
 
