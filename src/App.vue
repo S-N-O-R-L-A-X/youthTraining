@@ -11,19 +11,19 @@
 
 <script>
 
-import Header from './layout/Header.vue'
-import Sidebar from './layout/Sidebar.vue'
+// import Header from './layout/Header.vue'
+// import Sidebar from './layout/Sidebar.vue'
 export default {
   name: 'App',
   components: {
-    Header,
-    Sidebar
+    // Header,
+    // Sidebar
   },
 }
 </script>
 
 <style>
-html, body {
+/* html, body {
   margin: 0;
 }
 
@@ -33,7 +33,7 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  /* margin-top: 60px; */
+
 }
 
 .el-header {
@@ -41,7 +41,7 @@ html, body {
     color: red;
     text-align: center;
     line-height: 200px;
-    height:400px;
+    min-height:12%;
   }
 
 .el-aside {
@@ -53,7 +53,7 @@ html, body {
 .icon {
     width: 1.5em; 
     height: 1.5em;
-    /* vertical-align: -0.15em; */
+    
     fill: currentColor;
     overflow: hidden;
 }
@@ -64,5 +64,5 @@ html, body {
 
 p{
   text-indent: 2em;
-}
+} */
 </style>

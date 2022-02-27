@@ -1,12 +1,12 @@
 <template>
-  <el-container>
+  <!-- <el-container> -->
     <!-- <el-aside>
       <Sidebar/>
     </el-aside> -->
-    <el-main>
+    <!-- <el-main> -->
       <my-markdown></my-markdown>
-    </el-main>
-  </el-container>
+    <!-- </el-main> -->
+  <!-- </el-container> -->
 </template>
 
 <script>

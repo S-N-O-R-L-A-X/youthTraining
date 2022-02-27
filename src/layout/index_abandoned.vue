@@ -1,26 +1,21 @@
 <template>
   <div id="app">
     <el-container v-show="!$route.meta.keepAlive">
-      <el-header style="height:12%"><Header/></el-header>
+      <el-header><Header/></el-header>
       <el-container class="middleBox">
         <div class="sideBox">
           <el-aside v-show="showSidebar()===1"><Sidebar/></el-aside>
           <el-aside v-show="showSidebar()===2"><Sidebar2/></el-aside>
           <el-aside v-show="showSidebar()===3"><SidebarEQ/></el-aside>
         </div>
-        
-          
-        <div class="mainBox">
-          <router-view></router-view>
-        </div>
-          
-        <div class="clear"></div>
+        <!-- <div class="mainBox"> -->
+          <el-main class="mainBox">
+            <router-view></router-view>
+          </el-main>
+        <!-- </div> -->
         
       </el-container>
       <el-footer><Footer/></el-footer>
-      
-      <div class="clear"></div>
-
     </el-container>
 
     <router-view v-show="$route.meta.keepAlive"></router-view>
@@ -61,6 +56,8 @@ html, body {
   height: 100%;
 }
 
+
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -76,36 +73,40 @@ html, body {
   color: red;
   text-align: center;
   line-height: 200px;
-  /* min-height:117px; */
+  min-height:117px;
 }
 
-.clear {
-  clear: both;
+.el-container  {
+  /* min-height: 100%; */
+  overflow: auto;
+  height:100%;
+  background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
 }
 
 
 .middleBox {
-  background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+  display:block;
+  height: 100%;
 }
 
 .sideBox {
-  position: relative;
+  position: absolute;
   left:11%;
   width:18%;
   background-color: #fff;
-  /* height:100%; */
+  height:100%;
 }
 
-.el-aside {
+/* .el-aside {
   text-align: center;
   line-height: 200px;
-}
+  width:100% !important;
+} */
 
 .mainBox {
-  position: relative;
-  left:11%;
-  width:58%;
-  background-color:#A5A5A5;
+  position: absolute;
+  left:29%;
+  right:13%;
 }
 
 .icon {
@@ -114,6 +115,11 @@ html, body {
     /* vertical-align: -0.15em; */
     fill: currentColor;
     overflow: hidden;
+}
+
+.el-main {
+  padding:0 0 0 0 !important;
+  /* min-height: 40rem; */
 }
 
 p{
