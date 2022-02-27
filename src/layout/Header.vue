@@ -82,10 +82,10 @@ export default {
 <style lang="scss" scoped>
 
 .navbar {
-  height: 60px;
-  overflow: hidden;
+  height: 100%;
+  // overflow: hidden;
   position: relative;
-  border-bottom: 1px solid #d8dce5;
+  // border-bottom: 1px solid #d8dce5;
   // box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12), 0 0 3px 0 rgba(0, 0, 0, .04);
   // background-color:#A7FFEB;
 
@@ -101,9 +101,9 @@ export default {
   .logo {
       cursor: pointer;
       float:left;
-      width: 80px;
-      height: 50px;
-      margin: 5px 10px 5px 10px;
+      width: 10%;
+      height: 80%;
+      margin: 10px 20px 5px 20px;
       border-radius: 10px;
     }
 
@@ -115,11 +115,12 @@ export default {
     .link{
       margin-right: 40px;
       margin-left: 40px;  /*设置其水平方向上的外边距，元素之间的距离就会被拉开。*/
+      font-size:1.5em;
     }
 
     .menu-link {
       display: inline-block;
-      padding: 0 15px;
+      padding: 20px 20px;
       vertical-align:center;
     }
 
