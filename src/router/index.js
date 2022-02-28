@@ -7,7 +7,7 @@ import Forum from '../views/Forum.vue'
 import Sidebar from '../layout/Sidebar.vue'
 import ERROR from '@/views/error/404.vue'
 import EQ from '@/views/articles/eq'
-import Listen from '@/views/articles/listen'
+import ListenTechnique from '@/views/articles/listen/listenTechnique'
 import WhatIsCommunication from '@/views/articles/communication/whatIsCommunication'
 import InterpersonalCommunicationTechnique from '@/views/articles/communication/interpersonalCommunicationTechnique'
 import EffectiveCommunicationTechnique from '@/views/articles/communication/effectiveCommunicationTechnique'
@@ -105,7 +105,14 @@ const routes = [
   {
     path:'/listen',
     name:'Listen',
-    component: Listen
+    component: Layout,
+    children: [
+      {
+        path:'/listenTechnique',
+        name:'ListenTechnique',
+        component: ListenTechnique
+      }
+    ]
   },
   
   {
