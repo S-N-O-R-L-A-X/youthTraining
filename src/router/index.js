@@ -14,6 +14,8 @@ import EffectiveCommunicationTechnique from '@/views/articles/communication/effe
 import NonverbalCommunication from '@/views/articles/communication/nonverbalCommunication'
 import WordCommunication from '@/views/articles/communication/wordCommunication'
 import CommunicationSkill from '@/views/articles/communication/communicationSkill'
+import ImportantHint from '@/views/articles/communication/importantHint'
+
 
 Vue.use(VueRouter)
 
@@ -87,6 +89,11 @@ const routes = [
         path:'communicationSkill',
         name:'CommunicationSkill',
         component: CommunicationSkill
+      },
+      {
+        path:'importantHint',
+        name:'ImportantHint',
+        component: ImportantHint
       },
     ]
   },

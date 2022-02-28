@@ -24,7 +24,6 @@
           <el-menu-item index="1-9">给予和接受反馈 </el-menu-item>
           <el-menu-item index="1-10">改善沟通  </el-menu-item>
           <el-menu-item index="1-11">面试技巧 </el-menu-item>
-          <el-menu-item index="1-12">电话采访 </el-menu-item>
           <el-menu-item index="1-13">面试技巧 </el-menu-item>
           <el-menu-item index="1-14">商务语言技能 </el-menu-item>
           <el-menu-item index="1-15">推理之梯 </el-menu-item>
