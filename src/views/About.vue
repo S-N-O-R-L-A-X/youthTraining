@@ -108,7 +108,6 @@ export default {
   position: relative;
   float:left;
   left:11%;
-
   width:58%;
   height:100%;
   background-color: grey;
