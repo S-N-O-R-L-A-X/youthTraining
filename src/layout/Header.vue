@@ -102,15 +102,15 @@ export default {
       cursor: pointer;
       float:left;
       width: 10%;
-      height: 80%;
-      margin: 10px 20px 5px 20px;
+      // height: 90%;
+      margin: 0px 20px 0px 20px;
       border-radius: 10px;
     }
 
   .right-menu {
     float: right;
     height: 100%;
-    line-height: 60px;
+    line-height: 80px;
 
     .link{
       margin-right: 40px;
@@ -119,8 +119,9 @@ export default {
     }
 
     .menu-link {
-      display: inline-block;
-      padding: 20px 20px;
+      // display: inline-block;
+      // padding: 20px 20px;
+      // margin: 0px 20px 0px 20px;
       vertical-align:center;
     }
 
@@ -144,13 +145,13 @@ export default {
       }
     }
 
-    .user-avatar {
-      cursor: pointer;
-      width: 50px;
-      height: 50px;
-      margin: 5px 10px 5px 10px;
-      border-radius: 10px;
-    }
+    // .user-avatar {
+    //   cursor: pointer;
+    //   width: 50px;
+    //   height: 50px;
+    //   margin: 5px 10px 5px 10px;
+    //   border-radius: 10px;
+    // }
 
     
   }

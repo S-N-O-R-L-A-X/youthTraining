@@ -24,7 +24,6 @@
           <el-menu-item index="1-9">给予和接受反馈 </el-menu-item>
           <el-menu-item index="1-10">改善沟通  </el-menu-item>
           <el-menu-item index="1-11">面试技巧 </el-menu-item>
-          <el-menu-item index="1-13">面试技巧 </el-menu-item>
           <el-menu-item index="1-14">商务语言技能 </el-menu-item>
           <el-menu-item index="1-15">推理之梯 </el-menu-item>
         </el-menu-item-group>
@@ -42,7 +41,7 @@
 
         <el-menu-item-group>
           <!-- <el-menu-item index="2-1">有效聆听的重要提示 </el-menu-item> -->
-          <el-menu-item index="2-1">有效聆听的重要提示 </el-menu-item>
+          <el-menu-item index="/listen/importantHint">有效聆听的重要提示 </el-menu-item>
           <el-menu-item index="2-2">聆听的 10 条原则 </el-menu-item>
           <el-menu-item index="2-3">有效的倾听技巧 </el-menu-item>
           <el-menu-item index="2-4">有效倾听的障碍 </el-menu-item>

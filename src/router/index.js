@@ -90,11 +90,7 @@ const routes = [
         name:'CommunicationSkill',
         component: CommunicationSkill
       },
-      {
-        path:'importantHint',
-        name:'ImportantHint',
-        component: ImportantHint
-      },
+      
     ]
   },
   
@@ -115,10 +111,15 @@ const routes = [
     component: Layout,
     children: [
       {
-        path:'/listenTechnique',
+        path:'listenTechnique',
         name:'ListenTechnique',
         component: ListenTechnique
-      }
+      },
+      {
+        path:'importantHint',
+        name:'ImportantHint',
+        component: ImportantHint
+      },
     ]
   },
   

@@ -5,8 +5,9 @@
       <el-container class="middleBox">
         <div class="sideBox">
           <el-aside v-show="showSidebar()===1"><Sidebar/></el-aside>
-          <el-aside v-show="showSidebar()===2"><Sidebar2/></el-aside>
+          <el-aside v-show="showSidebar()===2"><SidebarListen/></el-aside>
           <el-aside v-show="showSidebar()===3"><SidebarEQ/></el-aside>
+          <el-aside v-show="showSidebar()===4"><SidebarCommunication/></el-aside>
         </div>
         
           
@@ -31,13 +32,14 @@
 
 import Header from './Header.vue'
 import Sidebar from './Sidebar.vue'
-import Sidebar2 from './Sidebar2.vue'
+import SidebarListen from './SidebarListen.vue'
 import SidebarEQ from './Sidebar_EQ.vue'
 import Footer from './Footer.vue'
+import SidebarCommunication from './SidebarCommunication'
 export default {
   name: 'App',
   components: {
-    Header, Sidebar, Sidebar2, Footer, SidebarEQ
+    Header, Sidebar, SidebarListen, Footer, SidebarEQ, SidebarCommunication
   },
   created(){
     this.showSidebar();
@@ -49,6 +51,7 @@ export default {
         return 2;
       else if(path.indexOf('/eq')>=0)
         return 3;
+      // else if(path.indexOf('/'))
       return 1;
     }
   }

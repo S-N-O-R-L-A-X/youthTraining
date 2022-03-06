@@ -13,9 +13,9 @@
         </template>
         <el-menu-item-group>
           <!-- <template slot="title"></template> -->
-          <el-menu-item index="/about">口头交流</el-menu-item>
-          <el-menu-item index="1-2">非语言交流</el-menu-item>
-          <el-menu-item index="/listenTechnique">倾听技巧</el-menu-item>
+          <el-menu-item index="/communication/wordCommunication">口头交流</el-menu-item>
+          <el-menu-item index="communication/nonverbalCommunication">非语言交流</el-menu-item>
+          <el-menu-item index="listen/listenTechnique">倾听技巧</el-menu-item>
         </el-menu-item-group>
       </el-submenu>
       <!-- <el-menu-item index="2" @click="navigate(2)"> -->
@@ -52,12 +52,7 @@ export default {
     }
   },
   methods: {
-    navigate(no){
-      switch (no){
-        case 2:this.$router.push('/eq');break;
-        default:break;
-      }
-    },
+    
   }
 }
 </script>
