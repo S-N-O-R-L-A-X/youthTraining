@@ -26,7 +26,7 @@
       </el-dropdown>
 
       <el-dropdown class="menu-link">
-        <el-link href="https://www.baidu.com"
+        <el-link href="/exam"
          target="_blank" class="link" :underline="false">
           技能测试<i class="el-icon-arrow-down"/>
         </el-link>
@@ -115,7 +115,7 @@ export default {
     .link{
       margin-right: 40px;
       margin-left: 40px;  /*设置其水平方向上的外边距，元素之间的距离就会被拉开。*/
-      font-size:1.5em;
+      font-size:1em;
     }
 
     .menu-link {

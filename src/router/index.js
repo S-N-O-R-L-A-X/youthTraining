@@ -14,8 +14,8 @@ import EffectiveCommunicationTechnique from '@/views/articles/communication/effe
 import NonverbalCommunication from '@/views/articles/communication/nonverbalCommunication'
 import WordCommunication from '@/views/articles/communication/wordCommunication'
 import CommunicationSkill from '@/views/articles/communication/communicationSkill'
-import ImportantHint from '@/views/articles/communication/importantHint'
-
+import ImportantHint from '@/views/articles/listen/importantHint'
+import Exam from '@/views/exam/exam.vue'
 
 Vue.use(VueRouter)
 
@@ -43,6 +43,11 @@ const routes = [
     path: '/forum',
     name: 'Forum',
     component: Forum
+  },
+  {
+    path: '/exam',
+    name: 'Exam',
+    component: Exam
   },
   {
     path: '/version',
