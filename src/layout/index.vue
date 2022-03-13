@@ -4,10 +4,10 @@
       <el-header style="height:12%"><Header/></el-header>
       <el-container class="middleBox">
         <div class="sideBox">
-          <el-aside v-show="showSidebar()===1"><Sidebar/></el-aside>
-          <el-aside v-show="showSidebar()===2"><SidebarListen/></el-aside>
-          <el-aside v-show="showSidebar()===3"><SidebarEQ/></el-aside>
-          <el-aside v-show="showSidebar()===4"><SidebarCommunication/></el-aside>
+          <el-aside v-show="showSidebar()===1" width="100%"><Sidebar/></el-aside>
+          <el-aside v-show="showSidebar()===2" width="100%"><SidebarListen/></el-aside>
+          <el-aside v-show="showSidebar()===3" width="100%"><SidebarEQ/></el-aside>
+          <el-aside v-show="showSidebar()===4" width="100%"><SidebarCommunication/></el-aside>
         </div>
         
           
@@ -94,7 +94,7 @@ html, body {
 .sideBox {
   position: relative;
   left:11%;
-  width:18%;
+  width:20%;
   background-color: #fff;
   /* height:100%; */
 }
@@ -102,13 +102,15 @@ html, body {
 .el-aside {
   text-align: center;
   line-height: 200px;
+  
 }
 
 .mainBox {
   position: relative;
   left:11%;
   width:58%;
-  background-color:#A5A5A5;
+  background-color:#F8F8F8;
+  padding:5px 1em 5px 1em;
 }
 
 .icon {
@@ -124,5 +126,8 @@ p{
   text-align: left;
 }
 
+h1 {
+  font-size: 2em;
+}
 
 </style>

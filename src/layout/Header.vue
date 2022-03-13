@@ -123,6 +123,7 @@ export default {
       // padding: 20px 20px;
       // margin: 0px 20px 0px 20px;
       vertical-align:center;
+      font-size:1em;
     }
 
     &:focus {
