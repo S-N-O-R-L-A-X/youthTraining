@@ -47,7 +47,7 @@ export default {
   methods:{
     showSidebar(){
       const path=this.$route.path;
-      if(path.indexOf('/communication')>=0)
+      if(path.indexOf('/communication')>=0||path.indexOf('/listen')>=0)
         return 2;
       else if(path.indexOf('/eq')>=0)
         return 3;
