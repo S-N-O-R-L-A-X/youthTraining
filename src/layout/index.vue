@@ -10,7 +10,6 @@
           <el-aside v-show="showSidebar()===4" width="100%"><SidebarCommunication/></el-aside>
         </div>
         
-          
         <div class="mainBox">
           <router-view></router-view>
         </div>
