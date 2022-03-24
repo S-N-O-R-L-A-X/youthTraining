@@ -16,6 +16,10 @@ import WordCommunication from '@/views/articles/communication/wordCommunication'
 import CommunicationSkill from '@/views/articles/communication/communicationSkill'
 import ImportantHint from '@/views/articles/listen/importantHint'
 import Exam from '@/views/exam/exam.vue'
+import Header from '@/layout/Header.vue'
+import EffectiveListenTechnique from '@/views/articles/listen/effectiveListenTechnique'
+import ListenBarrier from '@/views/articles/listen/listenBarrier'
+import TenPrinciples from '@/views/articles/listen/tenPrinciples'
 
 Vue.use(VueRouter)
 
@@ -28,6 +32,11 @@ const routes = [
         path:'',
         name:'Home',
         component: Home
+      },
+      {
+        path:'header',
+        name:'Header',
+        component: Header
       }
     ]
   },
@@ -96,7 +105,8 @@ const routes = [
         component: CommunicationSkill
       },
       
-    ]
+    ],
+
   },
   
   {
@@ -124,6 +134,21 @@ const routes = [
         path:'importantHint',
         name:'ImportantHint',
         component: ImportantHint
+      },
+      {
+        path:'effectiveListenTechnique',
+        name:'EffectiveListenTechnique',
+        component: EffectiveListenTechnique
+      },
+      {
+        path:'listenBarrier',
+        name:'ListenBarrier',
+        component: ListenBarrier
+      },
+      {
+        path:'tenPrinciples',
+        name:'TenPrinciples',
+        component: TenPrinciples
       },
     ]
   },
