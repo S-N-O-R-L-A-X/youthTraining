@@ -7,7 +7,7 @@
           <el-aside v-show="showSidebar()===1" width="100%"><Sidebar/></el-aside>
           <el-aside v-show="showSidebar()===2" width="100%"><SidebarListen/></el-aside>
           <el-aside v-show="showSidebar()===3" width="100%"><SidebarEQ/></el-aside>
-          <el-aside v-show="showSidebar()===4" width="100%"><SidebarCommunication/></el-aside>
+          <!-- <el-aside v-show="showSidebar()===4" width="100%"><SidebarCommunication/></el-aside> -->
         </div>
         
           
@@ -102,7 +102,6 @@ html, body {
 .el-aside {
   text-align: center;
   line-height: 200px;
-  
 }
 
 .mainBox {
@@ -130,4 +129,7 @@ h1 {
   font-size: 2em;
 }
 
+ul,li {
+  text-align: left;
+}
 </style>
