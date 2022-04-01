@@ -51,17 +51,32 @@ const routes = [
   {
     path: '/forum',
     name: 'Forum',
-    component: Forum
+    component: Header
   },
   {
     path: '/exam',
-    name: 'Exam',
-    component: Exam
+    
+    component: Layout,
+    children:[
+      {
+        path:'',
+        name: 'Exam',
+        component: Exam
+      }
+    ]
   },
   {
     path: '/version',
     name: 'Version',
-    component: Version
+    component: Layout,
+    children:[
+      {
+        path:'',
+        name: 'Version',
+        component: Version
+      }
+    ]
+    
   },
   {
     path: '/sidebar',

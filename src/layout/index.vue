@@ -7,6 +7,7 @@
           <el-aside v-show="showSidebar()===1" width="100%"><Sidebar/></el-aside>
           <el-aside v-show="showSidebar()===2" width="100%"><SidebarListen/></el-aside>
           <el-aside v-show="showSidebar()===3" width="100%"><SidebarEQ/></el-aside>
+
           <!-- <el-aside v-show="showSidebar()===4" width="100%"><SidebarCommunication/></el-aside> -->
         </div>
         
@@ -51,7 +52,8 @@ export default {
         return 2;
       else if(path.indexOf('/eq')>=0)
         return 3;
-      // else if(path.indexOf('/'))
+      else if(path.indexOf('/exam')>=0)
+        return 4;
       return 1;
     }
   }
