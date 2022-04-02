@@ -38,7 +38,7 @@
           </el-dropdown-menu>
         </template>
       </el-dropdown>
-      <el-link class="link">论坛</el-link>
+      <el-link class="link" href="/forum">论坛</el-link>
       <!-- <el-link class="menu-link">欢迎，{{ $store.state.user.username }}</el-link> -->
       <!-- <img src="https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif" class="user-avatar"> -->
 

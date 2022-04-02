@@ -42,9 +42,9 @@
         <el-menu-item-group>
           <!-- <el-menu-item index="2-1">有效聆听的重要提示 </el-menu-item> -->
           <el-menu-item index="/listen/importantHint">有效聆听的重要提示 </el-menu-item>
-          <el-menu-item index="2-2">聆听的 10 条原则 </el-menu-item>
-          <el-menu-item index="2-3">有效的倾听技巧 </el-menu-item>
-          <el-menu-item index="2-4">有效倾听的障碍 </el-menu-item>
+          <el-menu-item index="/listen/tenPrinciples">聆听的 10 条原则 </el-menu-item>
+          <el-menu-item index="/listen/effectiveListenTechnique">有效的倾听技巧 </el-menu-item>
+          <el-menu-item index="/listen/listenBarrier">有效倾听的障碍 </el-menu-item>
           <el-menu-item index="2-5">听力类型 </el-menu-item>
           <el-menu-item index="2-6">积极倾听 </el-menu-item>
           <el-menu-item index="2-7">正念聆听 </el-menu-item>
