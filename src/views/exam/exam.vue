@@ -23,6 +23,7 @@
           </el-table-column>
         <!-- </el-radio-group> -->
       </el-table>
+      <el-link href="/">清空测试并回到主页</el-link>
     </el-main>
   </el-container>
 </template>

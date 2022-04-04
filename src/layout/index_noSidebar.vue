@@ -2,15 +2,7 @@
   <div id="app">
     <el-container v-show="!$route.meta.keepAlive">
       <el-header style="height:12%"><Header/></el-header>
-      <el-container class="middleBox">
-        <div class="sideBox">
-          <el-aside v-show="showSidebar()===1" width="100%" style="overflow:hidden"><Sidebar/></el-aside>
-          <el-aside v-show="showSidebar()===2" width="100%" style="overflow:hidden"><SidebarListen/></el-aside>
-          <el-aside v-show="showSidebar()===3" width="100%" style="overflow:hidden"><SidebarEQ/></el-aside>
-
-          <!-- <el-aside v-show="showSidebar()===4" width="100%"><SidebarCommunication/></el-aside> -->
-        </div>
-        
+      <el-container class="middleBox">        
         <div class="mainBox">
           <router-view></router-view>
         </div>
@@ -31,35 +23,19 @@
 <script>
 
 import Header from './Header.vue'
-import Sidebar from './Sidebar.vue'
-import SidebarListen from './SidebarListen.vue'
-import SidebarEQ from './Sidebar_EQ.vue'
 import Footer from './Footer.vue'
-import SidebarCommunication from './SidebarCommunication'
+
 export default {
   name: 'App',
   components: {
-    Header, Sidebar, SidebarListen, Footer, SidebarEQ, SidebarCommunication
-  },
-  created(){
-    this.showSidebar();
+    Header, Footer,
   },
   methods:{
-    showSidebar(){
-      const path=this.$route.path;
-      if(path.indexOf('/communication')>=0||path.indexOf('/listen')>=0)
-        return 2;
-      else if(path.indexOf('/eq')>=0)
-        return 3;
-      else if(path.indexOf('/exam')>=0)
-        return 4;
-      return 1;
-    }
   }
 }
 </script>
 
-<style>
+<style scoped>
 html, body {
   margin: 0;
   height: 100%;
@@ -92,27 +68,12 @@ html, body {
   background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
 }
 
-.el-aside {
-  text-align: center;
-  line-height: 200px;
-  overflow: hidden;
-}
-
-.sideBox {
-  position: relative;
-  left:11%;
-  width:20%;
-  background-color: #fff;
-  
-  /* height:100%; */
-}
-
-
 
 .mainBox {
   position: relative;
-  left:11%;
-  width:58%;
+  left:15%;
+
+  width:70%;
   background-color:#F8F8F8;
   padding:5px 1em 5px 1em;
 }

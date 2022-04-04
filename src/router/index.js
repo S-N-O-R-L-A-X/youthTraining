@@ -20,6 +20,7 @@ import Header from '@/layout/Header.vue'
 import EffectiveListenTechnique from '@/views/articles/listen/effectiveListenTechnique'
 import ListenBarrier from '@/views/articles/listen/listenBarrier'
 import TenPrinciples from '@/views/articles/listen/tenPrinciples'
+import Layout2 from '@/layout/index_noSidebar.vue'
 
 Vue.use(VueRouter)
 
@@ -33,13 +34,9 @@ const routes = [
         name:'Home',
         component: Home
       },
-      {
-        path:'header',
-        name:'Header',
-        component: Header
-      }
     ]
   },
+
   {
     path: '/about',
     name: 'About',
@@ -55,8 +52,7 @@ const routes = [
   },
   {
     path: '/exam',
-    
-    component: Layout,
+    component: Layout2,
     children:[
       {
         path:'',
