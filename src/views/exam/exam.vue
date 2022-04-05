@@ -67,7 +67,7 @@ export default {
     },
   },
   created() {
-    // this.getQuestion();
+    this.getQuestion();
   },
 };
 </script>

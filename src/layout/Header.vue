@@ -1,8 +1,10 @@
 <template>
   <div class="navbar">
-    <router-link to="/">
-      <img src="../assets/logo2.png" class="logo" />
-    </router-link>
+    <div class="imgBox">
+      <router-link to="/">
+        <img src="../assets/logo2.png" class="logo" />
+      </router-link>
+    </div>
     <div class="right-menu">
       
       <!-- <el-link class="menu-link" @click="$router.push({name:'SysLogs'})">操作日志</el-link> -->
