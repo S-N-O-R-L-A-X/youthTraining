@@ -14,7 +14,7 @@
         </el-link>
       </el-tooltip> -->
       <el-dropdown class="menu-link">
-        <router-link to="/exam" class="link">技能测试<i class="el-icon-arrow-down"/></router-link>
+        <router-link to="/exam" class="link">人际关系<i class="el-icon-arrow-down"/></router-link>
 
         <template #dropdown>
           <el-dropdown-menu>
