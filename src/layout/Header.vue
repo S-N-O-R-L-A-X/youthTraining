@@ -14,10 +14,8 @@
         </el-link>
       </el-tooltip> -->
       <el-dropdown class="menu-link">
-        <el-link href="https://www.baidu.com" 
-        target="_blank" class="link" :underline="false">
-          人际技能<i class="el-icon-arrow-down"/>
-        </el-link>
+        <router-link to="/exam" class="link">技能测试<i class="el-icon-arrow-down"/></router-link>
+
         <template #dropdown>
           <el-dropdown-menu>
             <el-dropdown-item v-for="(item,key) in items" :key="key">
@@ -28,10 +26,11 @@
       </el-dropdown>
 
       <el-dropdown class="menu-link">
-        <el-link href="/exam"
-         target="_blank" class="link" :underline="false">
+        <!-- <el-link href="/exam"
+          class="link" :underline="false">
           技能测试<i class="el-icon-arrow-down"/>
-        </el-link>
+        </el-link> -->
+        <router-link to="/exam" class="link">技能测试<i class="el-icon-arrow-down"/></router-link>
         <template #dropdown>
           <el-dropdown-menu>
             <el-dropdown-item v-for="item in items">
@@ -40,7 +39,7 @@
           </el-dropdown-menu>
         </template>
       </el-dropdown>
-      <el-link class="link" href="/forum">论坛</el-link>
+      <router-link to="/forum" class="link">论坛</router-link>
       <!-- <el-link class="menu-link">欢迎，{{ $store.state.user.username }}</el-link> -->
       <!-- <img src="https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif" class="user-avatar"> -->
 
@@ -118,6 +117,8 @@ export default {
       margin-right: 40px;
       margin-left: 40px;  /*设置其水平方向上的外边距，元素之间的距离就会被拉开。*/
       font-size:1em;
+      text-decoration: none;
+      color:black;
     }
 
     .menu-link {
