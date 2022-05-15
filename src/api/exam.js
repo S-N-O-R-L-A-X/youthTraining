@@ -6,5 +6,5 @@ export function getExam(params=null){
 }
 
 export function postResults(params=null){
-    return axios.post(base_url+'test/',params);
+    return axios.post(base_url+'score/submit_all/',null,{params});
 }

@@ -76,6 +76,7 @@ html, body {
   width:70%;
   background-color:#F8F8F8;
   padding:5px 1em 5px 1em;
+  min-height: 100%;
 }
 
 .icon {
@@ -97,5 +98,9 @@ h1 {
 
 ul,li {
   text-align: left;
+}
+
+.el-container {
+  min-height: 100%;
 }
 </style>

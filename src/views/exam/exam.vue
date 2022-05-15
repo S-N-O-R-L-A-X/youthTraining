@@ -23,7 +23,8 @@
           </el-table-column>
         <!-- </el-radio-group> -->
       </el-table>
-      <el-button @click="submitResults()">提交</el-button>
+      <el-button @click="submitResults()" class="submit">提交</el-button>
+      <br>
       <el-link href="/">清空测试并回到主页</el-link>
     </el-main>
   </el-container>
@@ -56,17 +57,20 @@ export default {
     },
     submitResults() {
       let str="";
-      console.log(this.choices);
-      for(let i=0;i<this.tableData.length;i++){
-        if(!this.choices[i]){
-          alert("您的第"+(i+1)+"题未完成！");
-          return ;
-        }
-        str+=this.choices[i];
-      } 
-      postResults(str)
+      // for(let i=0;i<this.tableData.length;i++){
+      //   if(this.choices[i]===undefined){
+      //     alert("您的第"+(i+1)+"题未完成！");
+      //     return ;
+      //   }
+      //   str+=this.choices[i];
+      // } 
+      
+      str="1".repeat(49);
+      console.log(str);
+      postResults({allChoice:str})
         .then((res) => {
-          console.log("submit!");
+          console.log(res);
+          this.$router.push({name:"ExamResult",params:{content:res.data}});
         })
         .catch((err) => {
           alert(err.message);
@@ -79,3 +83,9 @@ export default {
 };
 </script>
 
+<style scoped>
+.submit {
+  background-color:#e7e9e8;
+  
+}
+</style>
