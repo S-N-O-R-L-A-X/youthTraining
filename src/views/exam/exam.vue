@@ -8,51 +8,37 @@
         <!-- <el-radio-group prop="rate"> -->
           <el-table-column label="总是">
             <template slot-scope="scope">
-              <el-radio v-model="scope.row.rate" :label="1">√</el-radio>
+              <el-radio v-model="scope.row.rate" :label="2" @click.native="choose(scope.$index,2)">√</el-radio>
             </template>
           </el-table-column>
           <el-table-column label="有时">
             <template slot-scope="scope">
-              <el-radio v-model="scope.row.rate" :label="2">√</el-radio>
+              <el-radio v-model="scope.row.rate" :label="1" @click.native="choose(scope.$index,1)">√</el-radio>
             </template>
           </el-table-column>
           <el-table-column label="从不">
             <template slot-scope="scope">
-              <el-radio v-model="scope.row.rate" :label="3">√</el-radio>
+              <el-radio v-model="scope.row.rate" :label="0" @click.native="choose(scope.$index,0)">√</el-radio>
             </template>
           </el-table-column>
         <!-- </el-radio-group> -->
       </el-table>
+      <el-button @click="submitResults()">提交</el-button>
       <el-link href="/">清空测试并回到主页</el-link>
     </el-main>
   </el-container>
 </template>
 
 <script>
-import { getExam } from "@/api/exam.js";
+import { getExam, postResults } from "@/api/exam.js";
 export default {
   data() {
     return {
       instruction: "wait",
       tableData: [
-        {
-          question: "2016-05-02",
-          rate: 2,
-        },
-        {
-          question: "2016-05-04",
-          rate: 3,
-        },
-        {
-          question: "2016-05-01",
-          rate: 3,
-        },
-        {
-          question: "2016-05-03",
-          rate: 3,
-
-        },
+        
       ],
+      choices:[],
     };
   },
   methods: {
@@ -65,6 +51,27 @@ export default {
           alert(err.message);
         });
     },
+    choose(index,result){
+      this.choices[index]=result;
+    },
+    submitResults() {
+      let str="";
+      console.log(this.choices);
+      for(let i=0;i<this.tableData.length;i++){
+        if(!this.choices[i]){
+          alert("您的第"+(i+1)+"题未完成！");
+          return ;
+        }
+        str+=this.choices[i];
+      } 
+      postResults(str)
+        .then((res) => {
+          console.log("submit!");
+        })
+        .catch((err) => {
+          alert(err.message);
+        });
+    }
   },
   created() {
     this.getQuestion();
