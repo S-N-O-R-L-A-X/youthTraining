@@ -16,6 +16,7 @@ import WordCommunication from '@/views/articles/communication/wordCommunication'
 import CommunicationSkill from '@/views/articles/communication/communicationSkill'
 import ImportantHint from '@/views/articles/listen/importantHint'
 import Exam from '@/views/exam/exam.vue'
+import ExamResult from '@/views/exam/examResult.vue'
 import Header from '@/layout/Header.vue'
 import EffectiveListenTechnique from '@/views/articles/listen/effectiveListenTechnique'
 import ListenBarrier from '@/views/articles/listen/listenBarrier'
@@ -58,6 +59,11 @@ const routes = [
         path:'',
         name: 'Exam',
         component: Exam
+      },
+      {
+        path:'/examResult',
+        name: 'ExamResult',
+        component: ExamResult
       }
     ]
   },
